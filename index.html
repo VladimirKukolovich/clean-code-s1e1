@@ -9,36 +9,34 @@
     <link rel="stylesheet" href="style.css"
         media="screen" charset="utf-8">
   </head>
-  <body>
-    <div class="aaa">
+  <body class="body">
+    <header class="header">
       <img src="./eisenhower-matrix.jpg">
-      <a class="more_inf"
+      <a class="header_info-link"
           href="https://goal-life.com/page/method/matrix-eisenhower">
           Want more details?
       </a>
-    </div>
-    <div class="centered-main-page-element">
-      <p id="topSectionForAddingElementToList">
-        <label for="new-task">
+    </header>
+    <main class="main">
+        <label for="new-task" class="new-task_label">
             Add Item
         </label>
-        <div class="task-row-wrapper">
+        <div class="task-wrapper">
           <input id="new-task" class="task" type="text">
-          <button>
-              Add
+          <button class="new-task_button">
+            Add
           </button>
         </div>
-      </p>
-      <h3>
+      <h3 class="title">
         Todo
       </h3>
-      <ul id="incompleteTasks">
-        <li>
-          <input type="checkbox">
+      <ul id="incompleted">
+        <li class="save-mode">
+          <input type="checkbox" class="check">
           <label class="task">
               Pay Bills
           </label>
-          <input type="text" class="task">
+          <input type="text" class="task" >
           <button class="edit">
               Edit
           </button>
@@ -46,8 +44,8 @@
             <img src="./remove.svg">
           </button>
         </li>
-        <li class="editMode">
-          <input type="checkbox">
+        <li class="edit-mode">
+          <input type="checkbox" class="check">
           <label class="task">
               Go Shopping
           </label>
@@ -60,12 +58,12 @@
           </button>
         </li>
       </ul>
-      <h3>
+      <h3 class="title">
         Completed
       </h3>
-      <ul id="completed-tasks">
-        <li>
-          <input type="checkbox" checked>
+      <ul id="completed">
+        <li class="save-mode">
+          <input type="checkbox" checked class="check">
           <label class="task">
               See the Doctor
           </label>
@@ -78,7 +76,7 @@
           </button>
         </li>
       </ul>
-    </div>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
